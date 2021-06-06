@@ -1,0 +1,124 @@
+.changer{
+    background-color:white;
+    height:100%;
+    margin-top:-8px;
+    width:40vw;
+    
+    
+    
+}
+.god_cross{
+    color:black;
+    z-index:3;
+}
+#login_head_chage{
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    top:180px;
+    left:50px;
+}
+#login_change{
+    font-size:30px;
+    color: black;
+    position: absolute;
+    top:280px;
+    left:110px;
+}
+.change_login{
+    position:absolute;
+    top:430px;
+    left:160px;
+    height:60px;
+    width:250px;
+    background-color:#39ab90;
+    border-radius:50px;
+    border:none;
+    color:white;
+    font-weight: 100;
+    font-size: 20px;
+}
+.change_login:hover{
+    background-color:#3cc6a5;
+}
+/* first media responisve */
+
+@media screen and (max-width:1440px) {
+    #login_head_chage{
+        font-size:3.1vw;
+        top:200px;
+    }
+    #login_change{
+        font-size:2.0vw;
+        top:280px;
+        left:6.8vw;
+    }
+    .change_login{
+        height:50px;
+        width:200px;
+        top:400px;
+        left:170px;
+    }
+}
+@media screen and (max-width:1258px) {
+    .change_login{
+        height:50px;
+        width:190px;
+        top:390px;
+        left:10vw;
+    }
+}
+@media screen and (max-width:1023px) {
+    #login_head_chage{
+        font-size:3.1vw;
+        top:35vh;
+    }
+    #login_change{
+        font-size:2.0vw;
+        top:45vh;
+        left:6.8vw;
+    }
+    .change_login{
+        height:45px;
+        width:160px;
+        top:59vh;
+        left:9vw;
+    }
+}
+@media screen and (max-width:708px){
+    #login_head_chage{
+        top:22vh;
+        left:2.3vw;
+        font-size: 3.3vw;
+    }
+    #login_change{
+        font-size:2.7vw;
+        top:28vh;
+        left:2.8vw;
+    }
+    .change_login{
+        height:30px;
+        width:100px;
+        font-size: 14px;
+        top: 40vh;
+        left:10vw;
+    }
+}
+@media screen and (max-width:438px){
+    #login_head_chage{
+        top:25vh;
+        left:5vw;
+    }
+    #login_change{
+        
+        top:29vh;
+        left:6.8vw;
+    }
+    .change_login{
+        height:25px;
+        width:60px;
+        font-size: 10px;
+        top: 35vh;
+        left:10vw;
+    }
+}

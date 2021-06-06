@@ -1,0 +1,177 @@
+/* Common Tags */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fafafa;;
+}
+
+h1{
+    color: #ff9505;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+ul{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.separate_section{
+    height: 80px;
+}
+
+.line_div{
+    height: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #ff9505;
+
+}
+
+.container_divs{
+    width: 93%;
+    margin: 0px auto;
+    background-color: #fafafa;
+    padding: 35px 20px;
+    position: relative;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+    border: none;
+    outline: none;
+}
+.container_divs:hover{
+    background-color: #ffc1071f;
+}
+
+.images_divs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image_p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.carousel-item h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 0px;
+}
+
+/* Background Image Section */
+#bg_image{
+    height: 650px;
+    background-image: url(Images/background_image.jpeg); 
+    width: 100%;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bg_text{
+    position: relative;
+    padding: 100px 0px 100px 150px;
+    font-size: 40px;
+    color: white;
+}
+
+/* Text Section Images */
+.image_container_divs1{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+/* Service Section Images */
+.image_container_divs2{
+    height: 275px;
+    width: 300px;
+    margin: 5px;
+}
+
+
+/* Price Section */
+.checkbox_labels{
+    width: 100%;
+}
+
+.table-hover tr{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.table-striped tr{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* Reviews Section */
+#main_star{
+    color: gold;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 21px;
+}
+
+#main_star_p{
+    font-size: 60px;
+    color: black;
+    margin-left: 15px;
+}
+
+.review_container{
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    transition-duration: 0.1s;
+    transition-property: box-shadow,transform;
+}
+
+.review_container:hover{
+    box-shadow: -15px 15px 15px rgba(0,0,0,0.3);
+    transform: scale(1.02);
+}
+
+.first_letter_container{
+    font-weight: 600;
+    font-size: 35px;
+    width: 50px;
+    height: 52px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.review_names{
+    font-weight: 650;
+}
+
+/* Media Tags */
+@media (max-width:734px) {
+    #bg_text{
+        font-size: 1.78rem;
+        padding: 100px 0px 100px 100px;
+    }
+
+    .images_divs{
+        display: flex;
+        flex-direction: column;
+    }
+}

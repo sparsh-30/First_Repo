@@ -1,0 +1,497 @@
+.login,.changer,.register{
+    position: absolute;
+}
+.changer{
+    left:64vw;
+}
+.register{
+   display: none;
+}
+body{
+   /* background-image: url('images/img4.jpg');
+    background-repeat: repeat;
+    background-size:100%; */
+    background-color:black;
+    overflow:hidden;
+    
+}
+
+.login{
+    height:800px;
+    width:600px;
+    left:10vw;
+    top:3px;
+  /*  display: none;*/
+}
+.login h1{
+    position:relative;
+    left:80px;
+    top:30px;
+    font-size:50px;
+    color:white;
+}
+.icon{
+    position: relative;
+    top:40px;
+    left:150px;
+    width:200px;
+    height:50px;
+    
+}
+
+.log{
+    position: relative;
+    top:10px;
+}
+.a{
+    border:1px thin grey;
+    height:20px;
+    width:20px;
+    color:white;
+    padding:10px;
+    border-radius: 50%;
+    position: relative;
+    margin-left:20px;
+    left:50px;
+}
+.a:hover{
+    box-shadow: 0px 0px 5px grey;
+}
+.go:hover{
+    background-color:red;
+    color:white;
+    opacity:0.8;
+    
+    
+}
+.fb:hover{
+    background-color: #3b5998;
+    color:white;
+}
+.tw:hover{
+    background-color: #00acee;
+    color:white;
+}
+
+.tex{
+    position: relative;
+    margin-top:80px;
+    
+}
+#line1{
+    position: relative;
+    top:20px;
+    right:120px;
+}
+#line2{
+    position: relative;
+    bottom:16px;
+    left:120px;
+}
+#or{
+    position: relative;
+    left:294px;
+    color:white;
+}
+#log_in{
+    position: relative;
+    left:80px;
+}
+.user_name,.pass_name{
+    text-indent: 40px;
+    height:35px;
+    padding-top:6px;
+    font-size: 20px;
+    border-radius: 15px;
+    outline: none;
+    width:400px;
+    border:1px outset lightgrey;
+    margin-bottom:8px;
+}
+.emai_ico{
+    position:relative;
+    left:32px;
+    bottom:3px;
+    
+}
+.pass_ico{
+    position:relative;
+    left:32px;
+    bottom:3px;
+}
+#forgo_pass{
+    font-size: 20px;
+    position: relative;
+    top:5px;
+    left:123px;
+    text-decoration: none;
+    color:white;
+}
+.form_submit{
+    position: relative;
+    top:10px;
+    left:80px;
+    height:60px;
+    width:250px;
+    background-color:#39ab90;
+    border-radius:50px;
+    border:none;
+    color:white;
+    font-weight: 100;
+    font-size: 20px;
+    box-shadow:5px 5px 10px grey;
+}
+.form_submit:hover{
+    background-color:#3cc6a5;
+}
+.form_submit:active{
+    background-color:#39ab90;
+    box-shadow:none;
+    transition:all 3s;
+    
+}
+#link_style{
+    text-decoration: none;
+    color:white;
+
+}
+#link_style:hover{
+    text-shadow:2px 2px red;
+}
+.log_validation{
+    display:none;
+    position: relative;
+    font-size:20px;
+    color: white;
+    font-weight:bold;
+}
+.log_fir_p{
+    left:50px;
+    bottom:5px; 
+}
+.log_sec_p{
+    left:50px;
+    margin-top:-15px;
+}
+.cross{
+    display: inline;
+    position:absolute;
+    left:96vw;
+    z-index:2;
+    color:white;
+    
+}
+/* first media responisve */
+
+@media screen and (max-width:1366px) {
+    .login{
+        height:800px;
+        width:400px;
+        left:10vw;
+        top:3px;
+      /*  display: none;*/
+    }
+    .login h1{
+        left:90px;
+        top:30px;
+        font-size:40px;
+        
+    }
+    .icon{
+        
+        left:120px;
+        
+        
+    }
+    
+    .tex{
+        
+        margin-top:60px;
+        
+    }
+    #line1{
+        
+        right:60px;
+    }
+    #line2{
+        
+        left:190px;
+        height:0.5px;
+        top:-20px;
+    }
+    #or{
+        font-size:20px;
+        left:257px;
+    }
+    #log_in{
+        position: relative;
+        left:80px;
+    }
+    .user_name,.pass_name{
+        text-indent: 40px;
+        height:30px;
+        padding-top:6px;
+        font-size: 15px;
+        border-radius: 15px;
+        outline: none;
+        width:350px;
+        border:1px outset lightgrey;
+        margin-bottom:8px;
+    }
+   
+    #forgo_pass{
+        font-size: 15px;
+     
+        
+        
+    }
+    .form_submit{
+        
+        top:10px;
+        left:90px;
+        height:50px;
+        width:200px;
+        
+
+        
+        font-size: 20px;
+        
+    }
+    
+    .log_validation{
+        display:none;
+        position: relative;
+        font-size:15px;
+        color: white;
+        font-weight:bold;
+    }
+    
+    .cross{
+        display: inline;
+        position:absolute;
+        left:96vw;
+        z-index:2;
+        font-size:40px;
+        color:white;
+        
+    }
+    
+} 
+/* Second responsive */
+@media screen and (max-width:925px) {
+    .login{
+        left:1vw;
+    }
+}
+
+@media screen and (max-width:925px) {
+    .login{
+        left:-2vw;
+        top:3vh;
+    }
+    .login h1{
+        top:70px;
+        left:120px;
+        font-size:35px;
+    }
+    .icon{
+        
+        top:65px;
+        
+        
+    }
+    
+    #line1{
+        right:40px;
+        width:120px;
+    }
+    #line2{
+        
+        width:120px;
+        left:170px;
+    }
+    #or{
+        font-size:20px;
+        left:257px;
+    }
+    .cross{
+       
+        left:95vw;
+        font-size:35px;
+       
+        
+    }
+    .form_submit{
+        
+        top:10px;
+        left:120px;
+        height:40px;
+        width:150px;
+        
+
+        
+        font-size: 20px;
+        
+    }
+
+}
+@media screen and (max-width:708px){
+    .login{
+        left:-7vw;
+    }
+    .login h1{
+        left: 120px;  
+        top:60px;
+        font-size:25px;
+        
+    }
+    .icon{
+        
+        left:80px; 
+    }
+    #line1{
+        right:60px;
+        width:100px;
+    }
+    #line2{
+        
+        width:100px;
+        left:130px;
+    }
+    #or{
+        font-size:15px;
+        left:227px;
+    }
+    .user_name,.pass_name{
+        text-indent: 40px;
+        height:30px;
+        padding-top:6px;
+        font-size: 15px;
+        border-radius: 15px;
+        outline: none;
+        width:270px;
+        border:1px outset lightgrey;
+        margin-bottom:8px;
+    }
+    .form_submit{
+        
+        top:10px;
+        left:75px;
+        width:150px;
+        font-size: 15px;
+        
+    }
+    #forgo_pass{
+        font-size: 15px;
+        left: 85px;
+        
+    }
+}
+@media screen and (max-width:438px){
+    .login{
+        height:800px;
+        width:400px;
+        left:10vw;
+        top:3px;
+      /*  display: none;*/
+    }
+
+    .login h1{
+        left: -10px;  
+        top:130px;
+        font-size:20px;
+        
+    }
+    .icon{
+        
+        left:0px;
+        
+        
+    }
+    .a{
+        
+        height:10px;
+        width:10px;
+        padding:5px;
+        border-radius: 50%;
+        position: relative;
+        margin-left:10px;
+        left:16px;
+        top:100px;
+    }
+    
+    .tex{
+        
+        margin-top:60px;
+        
+    }
+    #line1{
+        width:40px;
+        right:180px;
+        top:23px;
+
+    }
+    #line2{
+        
+        left:-70px;
+        height:0.5px;
+        top:-18px;
+        width:40px;
+    }
+    #or{
+        font-size:20px;
+        left:67px;
+    }
+    #log_in{
+        position: relative;
+        left:-35px;
+        top:50px;
+    }
+    .user_name,.pass_name{
+        text-indent: 40px;
+        height:25px;
+        padding-top:4px;
+        font-size: 15px;
+        border-radius: 15px;
+        outline: none;
+        width:200px;
+        border:1px outset lightgrey;
+        margin-bottom:8px;
+    }
+   
+    #forgo_pass{
+        font-size: 10px;
+        left:75px;
+     
+        
+        
+    }
+    .form_submit{
+        
+        top:10px;
+        left:70px;
+        height:30px;
+        width:100px;
+        font-size: 10px;
+        
+    }
+    
+    .log_validation{
+        display:none;
+        position: relative;
+        font-size:10px;
+        color: white;
+        font-weight:bold;
+    }
+    
+    .cross{
+        display: inline;
+        position:absolute;
+        top:10vw;
+        left:96vw;
+        z-index:2;
+        font-size:10px;
+        color:white;
+        
+    }
+}

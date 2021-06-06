@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+        <script src="register.js"></script>
+        <script src="login.js"></script>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="changer.css">
+        <link rel="stylesheet" href="register.css">
+       <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
+       <script src="https://kit.fontawesome.com/c9ab252e96.js" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body onbeforeunload="clea()">
+      
+      <div class="cont" >
+        <div  class="login" id="login_div" >
+          <h1>Sign in to Turbo Future</h1>
+          <div class="icon" id="log_ico">
+            <i class="fab fa-facebook-f a fa-lg fb"></i>
+            <i class="fab fa-google a fa-lg go"></i>
+            <i class="fab fa-twitter a fa-lg tw"></i>
+          </div>
+          <p class="tex" id="fir_tex"><hr width="150"  id="line1"><span id="or">or</span><hr width="150" id="line2"></p>
+          <form action="D:\TurboFuture\TurboFuture\HomePage.html" method="GET" name="login_form"  class="log" id="log_in" onsubmit="return false;" >
+            <i class="far fa-envelope emai_ico"></i>
+            <input type="email" class="user_name lo_inp" id="user_mail" placeholder="Email"><br>
+            <p class="log_validation log_fir_p">sd</p><br>
+            <i class="fas fa-lock close_l pass_ico"></i>
+            <input type="password" class="pass_name lo_inp" id="user_pass" placeholder="Password"><br>
+            <p class="log_validation log_sec_p">asd</p>
+            <p id="forgo_pass"><a id="link_style" href="login.html">Forgot Your password?</a></p>
+            <button type="submit" class="form_submit" id="form_login" onclick="log_val()">Sign In</button>
+          </form>
+        </div>
+        <i class="fas fa-times cross fa-3x god_cross" onclick="cross_goback()"></i>
+        <div class="changer" id="place_change">
+          <h1 id="login_head_chage">don't have a account?</h1>
+          <p id="login_change">Sign up and discover a great<br> amount of new opportunities!</p>
+          <button class="change_login" id="sign_in" onclick="anima_reg(),clea_timeout()" >Sign up</button>
+        </div>
+        <div class="register" id="reg_div">
+          <h1 id="reg_head1">Create Free Account</h1>
+          <form class="shift_form" name="register_post" onsubmit="return false;">
+            <i class="far fa-user ab"></i>
+            <input type="text" name="Full-Name" class="name inp_reg" id="user_info" placeholder="Name"><br>
+            <p class="info_validation" id="name_vali"></p><br>
+            <i class="far fa-envelope ab"></i>
+            <input type="email" name="Email" class="reg_mail inp_reg" id="user_reg" placeholder="Email"><br>
+            <p class="info_validation" id="mail_vali"></p><br>
+            <i class="fas fa-key ab"></i>
+            <input type="password" name="Password" class="pass_reg_cla inp_reg" id="pass_reg" placeholder="password" onkeyup="password_cap()" onchange="password_cap()"><br>
+            <p class="info_validation" id="pass_vali"></p><br>
+            <i class="fas fa-key ab"></i>
+            <input type="text" class="verify_pass_cla inp_reg" id="verify_pass_reg"  placeholder="re-enter password"><br>
+            <span id="password_level"></span>
+            <p class="info_validation" id="verpass_vali"></p><br>
+            <button class="reg_but" id="sign_up" onclick="vali()" >Sign up</button><br>
+          </form>
+          <div class="other_op" id="other_signup">
+            <p class="div_or"><hr class="p_line1" width="220"><span class="div_p_or">or</span><hr class="p_line2" width="220"></p>
+            <p class="sign_using">Sign in using your social account</p>
+            <button class="google_signup btn_social">Google</button>
+            <button class="facebook_signup btn_social">Facebook</button>
+          </div>
+        </div>
+        
+      </div>
+    </body>
+</html>

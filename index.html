@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Turbo_Future</title>
+<link rel="icon" href="img\TurboFuture_Favicon.jpg" type="image/jpg">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/foot.css" rel="stylesheet" type="text/css">
+<script src="js/simple.js"></script>
+ <style>
+   
+.dropbtn {
+  background-color: #EFB21D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+.section-header p{
+text-align:center;
+color: #000000;
+}
+.section-header .section-title {
+  font-size: 44px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 0 20px;  
+
+
+  display: block;
+  text-align: center;
+  color: #3A3A3A;
+}
+.section-header .section-title:before {
+  content: "-----< o >----";
+  position: absolute;
+  width: 140px;
+  bottom: 4px;
+  right: 0;
+  width: 100px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 8px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
+#our-team {
+  padding: 100px 0;
+  background:black;
+}
+#our-team .team-member {
+  padding: 0;  
+}
+#our-team .team-member .team-img {
+  margin: 0;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 5px solid #F6CC07;
+}
+#our-team .team-member .team-info { 
+  background: black;
+  color: white;
+  padding: 7px 0;
+  border-top: 2px solid black;
+} 
+#our-team .team-member:hover .social-icons > li > a {
+  color: #60E1BF;
+}
+ 
+#our-team .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+    transition: height 1s;
+  background: black;
+  padding: 6px 0 6px;
+}
+#our-team .social-icons > li {
+  display: inline-block;
+}
+#our-team .social-icons > li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: yellow;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #F6CC07;
+  margin: 5px 10px;
+}
+#our-team .social-icons > li > a:hover {
+  color: #fff;
+  background: #F6CC07;
+  border-radius: 50%;
+  border: 1px solid #F6CC07;
+
+}
+
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+ </style>
+</head>
+<body onload="getting_name()">
+
+<!--Header_section-->
+<header id="header_wrapper">
+
+  <div class="container">    
+    <div class="header_box">
+        <a class="navbar-brand " style="color:white; font-weight:900; font-size:23px;"href="index.html">TURBO <span>FUTURE</span></a>
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+			  <li>
+        <div class="dropdown">
+  <button class="dropbtn">Categories</button>
+  <div class="dropdown-content">
+    <a href="Cleaner's%20Page/Cleaner%20Page.html">Home Cleaning</a>
+    <a href="Salon%20complete%20page/Salon's%20Page.html">Salon</a>
+    <a href="Plumber%20Complete%20Page/Plumber's%20page.html">Plumbing</a>
+    <a href="Electrician's%20Page/Electrician%20Page.html">Electrician</a>
+  </div>
+</div>
+
+</li>
+        <li><a href="#service" class="scroll-link">Services</a></li>
+			  <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
+			  
+			  <li><a href="login/login.html" id="log_bar_cli">Login</a></li>
+        <li class="user_dis" id="name_drodow">
+        <div class="dropdown">
+          <span class="user_set" id="name_dis">abcj</span>
+          <div class="dropdown-content name_nav_drop">
+            <a href="">My Orders</a>
+            <a href="" id="log_bar_cli" onclick="log_out()">Log Out</a>
+          </div>
+        </div>
+        </li>
+        
+			</ul>
+      </div>
+	 </nav>
+    </div>
+  </div>
+</header>
+<!--Header_section--> 
+
+<!--Hero_Section-->
+<section id="hero_section" class="top_cont_outer">
+  <div class="hero_wrapper">
+    <div class="container">
+      <div class="hero_section">
+        <div class="row">
+          <div class="col-md-12">
+		   
+            <div class="top_left_cont zoomIn wow animated"> 
+              <h2>Best Household <br> <strong>Service</strong></h2>
+
+                <div class="underline"></div>
+             
+              <a href="#service" class="read_more2"> Explore</a> </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Hero_Section--> 
+
+<!--Service-->
+<section  id="service">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-lg-4">
+		<div class="service_icon delay-03s animated wow  zoomIn"> 
+		<span><a href="Salon%20complete%20page/Salon's%20Page.html"><img src="img\adam-winger-WXmHwPcFamo-unsplash.jpg" alt="" /> </a></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">Haircut At Home</h3>
+            <p class="animated fadeInDown wow">You will get the best haircut experience at home. </p>
+          </div>
+        </div>
+        <div class="col-lg-4"> 
+		<div class="service_icon icon2  delay-03s animated wow zoomIn"> 
+		<span> <a href="Cleaner's%20Page/Cleaner%20Page.html"><img src="img/2.jpg" alt="" /></a> </span> </div> 
+		<div class="service_block">
+            <h3 class="animated fadeInUp wow">Cleaning</h3>
+            <p class="animated fadeInDown wow">Home cleaning is done by Professionals.  </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn"> 
+		<span><a href="Plumber%20Complete%20Page/Plumber's%20page.html"><img src="img\wesley-caribe-TtN_obfWlGw-unsplash.jpg" alt="" /> </a></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">Plumbers</h3>
+            <p class="animated fadeInDown wow"> Plumbers install and repair pipes with modernised techniques.  </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+<!--Service-->
+
+<section id="aboutUs"><!--Aboutus-->
+<div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+  <div class="container">
+    <h2 style="font-weight:900;">About Us</h2>
+    <h6>We provide the best experience to you.
+    <div class="inner_section">
+ 
+	  <div class="row">
+						<div class="col-lg-12 about-us">
+							<div class="row">
+							<div class="col-md-6">
+								<h3>Our Business</h3>
+									<p>
+										Everyone loves a clean house but not everyone loves cleaning a house. That’s why we have Turbo Future! Now, when you want your home (or any particular part of your home) to be spotless, you won’t even have to lift a finger. Just book online for a variety of home cleaning services and sit back while the experts take over.<br>
+
+Getting a deep cleaning is a good idea for a number of reasons. Not only does it keep your home looking great, it’s great for the health and hygiene of you and your family. There are also a few scenarios where a thorough cleaning might save the day.<br>
+If you have guests visiting and want to impress, just look for ‘Deep home cleaning service near me’ and select the time and date that works for you. If you don’t want the entire house cleaned you can book for specific services. For example, you can get your bathroom tiles sparkling by looking for ‘bathroom cleaning service near me’. Speaking of bathrooms, did you know that your water tank is probably collecting bacteria, algae and silt? Fortunately, that can be fixed with a water tank cleaning service.
+
+									</p>
+									<p>
+										 
+So you’ve just got some renovations done and your bedroom is now twice the size that it was, but it is also now filled with dust and debris from the renovation. Don’t waste your time attempting to clean it, just book a bedroom deep cleaning service while you spend your time bed shopping or looking for new linen.
+<br/> <br/>								
+										
+After the festive season, when all the relatives have left and the sweet boxes are almost over, the house might look like it was hit by a tornado. The kitchen is a mess and the sofa has stains of varying shapes and sizes. Luckily with HouseJoy, you can book a kitchen deep cleaning service and also look for sofa cleaning services You don’t have to book your services way in advance. Even on an ordinary day when your bai fails to show up, you can look for floor scrubber service online.
+									</p>
+
+								
+								</div><!-- /.col-md-6 -->
+								<div class="col-md-6">
+									<h3>We Provide Awesome Service</h3>
+									<p>
+										Our Company provides a platform that allows skilled and experienced professionals to connect with users looking for specific services
+									</p>
+
+									<ul class="about-us-list" style="align-content: right;">
+										<li class="points">We're Punctual</li>
+										<li class="points">We are Creative</li>
+										<li class="points">We're Responsible </li>
+                                        <li class="points">We;re Friendly</li>
+										<li class="points">We're Professional</li>
+									</ul><!-- /.about-us-list -->
+									 
+								</div><!-- /.col-md-6 -->
+								
+							</div><!-- /.row -->	
+						</div><!-- /.col-lg-12 -->
+					</div>
+      
+    </div>
+  </div> 
+  </div>
+</section>
+<!--Aboutus--> 
+
+
+
+
+
+<!-- Portfolio -->
+<section id="Portfolio" class="content"> 
+  
+  <!-- Container -->
+  <div class="container portfolio_title"> 
+    
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Categories</h2>
+    </div>
+    <!--/Title --> 
+    
+  </div>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+  
+  <!-- Portfolio Filters -->
+  <div class="portfolio"> 
+    
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          <h5>All</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".prototype">
+          <h5>Salon</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".design">
+          <h5>Home cleaning</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".android">
+          <h5>Plumber</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".appleIOS">
+          <h5>Electritian</h5>
+      </a>
+      
+      </ul>
+    </div>
+    <!--/Portfolio Filters --> 
+    
+    <!-- Portfolio Wrapper -->
+    <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
+      
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
+        <div class="portfolio_img"> <img src="https://thumbs.dreamstime.com/b/electrician-engineer-worker-cable-front-fuseboard-equipment-54368403.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <a href="Electrician's%20Page/Electrician%20Page.html" class="item_info fancybox"> 
+            <h4 class="project_name">Electrian</h4> 
+          </a>
+        </div>
+        </div>
+      <!--/Portfolio Item --> 
+       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
+        <div class="portfolio_img"> <img src="https://thumbs.dreamstime.com/b/plumber-work-bathroom-plumbing-repair-service-assemble-install-concept-plumber-work-bathroom-plumbing-repair-113995223.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <a href="Plumber%20Complete%20Page/Plumber's%20page.html" class="item_info fancybox"> 
+            <h4 class="project_name">Plumber</h4> 
+          </a>
+        </div>
+        </div>
+      
+      <!-- Portfolio Item-->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+        <div class="item_overlay">           
+          <a href="Cleaner's%20Page/Cleaner%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Home Cleaning</h4>             
+          </a>
+        </div>
+      </div>
+      <!--/Portfolio Item --> 
+       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
+        <div class="portfolio_img"> <img src="https://thumbs.dreamstime.com/b/male-electrician-wiring-switch-male-electrician-wiring-switch-173517463.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <a href="Electrician's%20Page/Electrician%20Page.html" class="item_info fancybox"> 
+            <h4 class="project_name">Electritian</h4> 
+          </a>
+        </div>
+        </div>
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <a href="Cleaner's%20Page/Cleaner%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Home Cleaning</h4> 
+          </a>
+        </div>
+      </div>
+      <!--/Portfolio Item--> 
+      
+      <!-- Portfolio Item-->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   prototype web isotope-item">
+        <div class="portfolio_img"> <img src="img\engin-akyurt-g-m8EDc4X6Q-unsplash.jpg" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <a href="Salon%20complete%20page/Salon's%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Salon</h4> 
+          </a>
+        </div>
+      </div>
+      <!-- Portfolio Item --> 
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  prototype web isotope-item">
+        <div class="portfolio_img"> <img src="img\s5.jpeg"  alt="1"> </div>
+        <div class="item_overlay">
+          <a href="Salon%20complete%20page/Salon's%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Salon</h4> 
+          </a>
+        </div>
+      </div>
+      
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <a href="Cleaner's%20Page/Cleaner%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Home Cleaning</h4>  
+          </a>
+        </div>
+      </div>
+      <!--/Portfolio Item --> 
+       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  prototype web isotope-item">
+        <div class="portfolio_img"> <img src="img\adam-winger-WXmHwPcFamo-unsplash.jpg" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <a href="Salon%20complete%20page/Salon's%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Salon</h4> 
+          </a>
+        </div>
+      </div>
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <a href="Cleaner's%20Page/Cleaner%20Page.html" class="item_info fancybox"> 
+            <h4 class="project_name">Home Cleaning           
+            </h4>  
+          </a>
+        </div>
+      </div>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item  -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
+        <div class="item_overlay">
+          <a href="Cleaner's%20Page/Cleaner%20Page.html" class="item_info fancybox">
+            <h4 class="project_name">Home Cleaning</h4> 
+          </a>
+        </div>
+       </div>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
+        <div class="portfolio_img"> <img src="https://thumbs.dreamstime.com/b/plumber-work-bathroom-plumbing-repair-service-assemble-plumber-work-bathroom-plumbing-repair-service-assemble-109779262.jpg" alt="Portfolio 1"> </div>       
+        <div class="item_overlay">
+         <a href="Plumber%20Complete%20Page/Plumber's%20page.html" class="item_info fancybox"> 
+				<h4 class="project_name">Plumber</h4> 
+          </a>
+        </div>
+        </div>
+      <!--/Portfolio Item --> 
+      
+
+    </div>
+    <!--/Portfolio Wrapper --> 
+    
+  </div>
+  <!--/Portfolio Filters -->
+  
+  <div class="portfolio_btm"></div>
+  
+  
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+ 
+  
+</section>
+<!--/Portfolio --> 
+
+<!--client_logos-->
+
+<section id="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown" style="font-weight: 900; color:white;">
+OUR TEAM
+</h2>
+            </div>
+      
+        
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3 style="color:white;">Aditya Sapra</h3>
+                            <span style="color:grey;">Founder</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3 style="color:white;">Gautam Vohra</h3>
+                            <span style="color:grey;">Founder</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3 style="color:white;">Sparsh</h3>
+                            <span style="color:grey;">Founder</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3 style="color:white;">Amit</h3>
+                            <span style="color:grey;">Founder</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!--/Team-->
+<!--Footer-->
+<footer class="footer_wrapper" style="background:white;" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <h2  style="color:black; font-weight:900;">Contact Us</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            
+          </div>
+          <div class="col-lg-4">
+           
+          </div>
+          <div class="col-lg-4">
+          
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 wow fadeInLeft">	
+		 <div class="contact_info">
+                            <div class="detail" style="color:black">
+                                <h4> Infoway</h4>
+                                <p  style="color:black">Sector-17, Chandigarh</p>
+                            </div>
+                            <div class="detail"  style="color:black">
+                                <h4  style="color:black">call us</h4>
+                                <p  style="color:black">+91 900000000</p>
+                            </div>
+                            <div class="detail"  style="color:black">
+                                <h4  style="color:black">Email us</h4>
+                                <p  style="color:black">support@sTurbo_Future.com</p>
+                            </div> 
+                        </div>
+       		  
+			  
+       
+        </div>
+        <div class="col-lg-8 wow fadeInLeft delay-06s">
+          <div class="form">
+            <input class="input-text" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input class="input-text" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+            <input class="input-btn" type="submit" value="send message">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+</div>
+
+    <footer class="footer" style="background:black;">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">pre-book</a></li>
+  	 				<li><a href="#">refund</a></li>
+  	 				<li><a href="#">status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">packages</a></li>
+  	 				<li><a href="#">hair care</a></li>
+  	 				<li><a href="#">equipments</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 		<div >
+          <ul class="social_links">
+            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
+            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
+          </ul>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+   </div>
+      <div class="container" style="color:white;">
+    <div class="footer_bottom"><span>Copyright © 2021,    Template by <a href="http://webthemez.com">TurboFuture.com</a>. </span> </div>
+  </div>
+
+</footer>
+
+
+    <script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/wow.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
