@@ -1,1 +1,1 @@
-This is a service providing website known as TurboFuture.
+This is a service providing website named TurboFuture.
